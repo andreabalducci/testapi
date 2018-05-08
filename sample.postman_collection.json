@@ -1,0 +1,87 @@
+{
+	"info": {
+		"name": "test api",
+		"_postman_id": "d9f9b34c-0f88-8e5e-d09a-191ce1f627eb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/data/anb",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"timestamp\":\"2018-05-02T11:02:00\", \n    \"minutes\": 1500,    \n    \"counter\": 1500 ,\n    \"parts\": [\"BAXCUR0121\", \"BAXCUR0122\"],\n    \"program\": \"1PFBAX065-420B\"  ,\n    \"machine\": \"420B\",\n    \"status\": \"on | off\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/data/anb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"data",
+						"anb"
+					]
+				},
+				"description": "Post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/data/MACHINE1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/data/MACHINE1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"data",
+						"MACHINE1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/data/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/data/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"data",
+						"0"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
